@@ -1,8 +1,18 @@
 <script>
 	export let size = 'medium';
+	function makePhoneCall() {
+		const phoneNumber = '01046886324'; // 전화를 걸고자 하는 전화번호
+		const telLink = `tel:${phoneNumber}`;
+		window.location.href = telLink;
+	}
 </script>
 
-<button class:small={size == 'small'} class:medium={size == 'medium'} {...$$restProps}>
+<button
+	on:click={makePhoneCall}
+	class:small={size == 'small'}
+	class:medium={size == 'medium'}
+	{...$$restProps}
+>
 	<slot />
 </button>
 

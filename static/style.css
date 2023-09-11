@@ -12,6 +12,7 @@ body {
 	max-width: 1024px;
 	margin: 0 auto;
 }
+
 @media screen and (max-width: 767px) {
 	body {
 		font-size: 14px;
@@ -25,6 +26,12 @@ body {
 		max-width: 100%;
 		height: auto;
 	}
+	.what p,
+	.contact p {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -33,7 +40,7 @@ body {
 		line-height: 1.5;
 		/* 기타 태블릿 화면용 폰트 스타일 속성 추가 */
 		.container {
-			flex-direction: row;
+			flex-direction: column; /* 태블릿 화면에서 세로로 쌓이도록 변경 */
 		}
 	}
 	img {
@@ -48,7 +55,13 @@ body {
 		line-height: 1.6;
 		/* 기타 PC 화면용 폰트 스타일 속성 추가 */
 		.container {
-			flex-direction: row;
+			flex-direction: row; /* PC 화면에서 다시 가로로 정렬 */
 		}
+	}
+	.what p,
+	.contact p {
+		white-space: normal; /* PC 화면에서는 텍스트 줄바꿈을 허용 */
+		overflow: visible;
+		text-overflow: clip;
 	}
 }
