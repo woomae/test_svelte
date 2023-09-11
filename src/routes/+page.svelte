@@ -5,4 +5,3 @@
 
 <Hero />
 <What />
-home

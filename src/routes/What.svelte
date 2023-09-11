@@ -20,7 +20,7 @@
 			가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하
 			가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하
 		</p>
-		<Button class="secondary" id="a-button" size="small">Call to Action</Button>
+		<Button class="secondary" id="a-button" size="medium">전화 걸기</Button>
 	</div>
 	<div class="contact">
 		<h3>Contact Us</h3>
@@ -35,7 +35,9 @@
 	.grid {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
-		gap: 2em;
+		gap: 2rem;
+		margin-bottom: 3rem;
+		padding: 5em;
 	}
 	.what {
 		grid-column: span 8;
@@ -44,9 +46,9 @@
 		grid-column: span 4;
 	}
 	h3 {
-		padding-bottom: 0.5em;
-		margin-bottom: 0.5em;
-		font-size: 2em;
+		padding-bottom: 0.5rem;
+		margin-bottom: 0.5rem;
+		font-size: 2rem;
 		font-weight: 500;
 		border-bottom: 1px solid #ddd;
 	}

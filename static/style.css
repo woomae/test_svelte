@@ -9,6 +9,46 @@ body {
 		'Noto Color Emoji';
 }
 .container {
-	max-width: 960px;
+	max-width: 1024px;
 	margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+	body {
+		font-size: 14px;
+		line-height: 1.4;
+		/* 기타 모바일 화면용 폰트 스타일 속성 추가 */
+		.container {
+			flex-direction: column;
+		}
+	}
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	body {
+		font-size: 16px;
+		line-height: 1.5;
+		/* 기타 태블릿 화면용 폰트 스타일 속성 추가 */
+		.container {
+			flex-direction: row;
+		}
+	}
+	img {
+		max-width: none;
+		/* 기타 스타일 속성 추가 */
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	body {
+		font-size: 18px;
+		line-height: 1.6;
+		/* 기타 PC 화면용 폰트 스타일 속성 추가 */
+		.container {
+			flex-direction: row;
+		}
+	}
 }
