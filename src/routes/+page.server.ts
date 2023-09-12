@@ -1,9 +1,8 @@
-export const load = async () => {
+export const load = async ({ fetch }) => {
 	const getPosts = async () => {
-		const res = await fetch('https://jsonplaceholder.typicode.com/photos');
+		const res = await fetch('/api/posts.json');
 		const data = await res.json();
-		const filteredData = data.slice(0, 3);
-		return filteredData;
+		return data;
 	};
 	return {
 		posts: getPosts()

@@ -1,6 +1,7 @@
 <script>
 	import Button from '$lib/Button.svelte';
 	import CallButton from '$lib/CallButton.svelte';
+	import Seo from '$lib/Seo.svelte';
 </script>
 
 <div class="container flex">
@@ -33,6 +34,7 @@
 		<p>email: <a href="mailto:name@example.com">name@example.com</a></p>
 	</div>
 </div>
+<Seo title="About | Business Frontpage" description="sample" type="WebPage" />
 
 <style>
 	.flex {

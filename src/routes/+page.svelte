@@ -1,6 +1,6 @@
 <script>
 	import What from './What.svelte';
-
+	import Seo from '$lib/Seo.svelte';
 	export let data;
 
 	$: ({ posts } = data);
@@ -10,14 +10,16 @@
 
 <div class="container">
 	<div class="flex-grid">
-		{#each posts as { title, url }}
+		{#each posts as { id, title, image, body }}
 			<div class="flex-item">
-				<img src={url} alt={title} />
-				<p>{title}</p>
+				<h2>{title.substring(0, 20)}</h2>
+				<img src={image} alt={title} />
+				<p>{body.substring(0, 80)}</p>
 			</div>
 		{/each}
 	</div>
 </div>
+<Seo title="sample" description="sample" type="WebSite" />
 
 <style>
 	.flex-grid {
