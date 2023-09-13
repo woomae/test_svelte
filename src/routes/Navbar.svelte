@@ -13,6 +13,10 @@
 		{
 			title: 'Contact',
 			href: '/contact'
+		},
+		{
+			title: 'Where',
+			href: '/where'
 		}
 	];
 

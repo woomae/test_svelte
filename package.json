@@ -34,5 +34,8 @@
 		"vitest": "^0.32.2",
 		"yup": "^1.2.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@types/navermaps": "^3.6.5"
+	}
 }
