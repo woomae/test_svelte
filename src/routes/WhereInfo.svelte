@@ -1,6 +1,6 @@
 <div class="where-info">
 	<div class="container">
-		<h2>Business Name or Tagline</h2>
+		<h2>where info</h2>
 	</div>
 </div>
 

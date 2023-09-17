@@ -34,21 +34,6 @@ body {
 	}
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-	body {
-		font-size: 16px;
-		line-height: 1.5;
-		/* 기타 태블릿 화면용 폰트 스타일 속성 추가 */
-		.container {
-			flex-direction: column; /* 태블릿 화면에서 세로로 쌓이도록 변경 */
-		}
-	}
-	img {
-		max-width: none;
-		/* 기타 스타일 속성 추가 */
-	}
-}
-
 @media screen and (min-width: 1024px) {
 	body {
 		font-size: 18px;
