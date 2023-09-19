@@ -2,12 +2,12 @@
 	import What from './What.svelte';
 	import Seo from '$lib/Seo.svelte';
 	export let data;
-
+	import Topdiv from './Topdiv.svelte';
 	$: ({ posts } = data);
 </script>
 
+<Topdiv />
 <What />
-
 <div class="container">
 	<div class="flex-grid">
 		{#each posts as { id, title, image, body }}
